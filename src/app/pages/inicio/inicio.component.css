@@ -1,10 +1,18 @@
 .btn-language {
   width: 76px;
   height: 76px;
-
+  
+  /* mix-blend-mode: luminosity; */
   border: 0rem;
+  filter: none;
   background: #ffffff;
   border-radius: 15px;
+}
+
+.btn-language:hover {
+  /* mix-blend-mode: normal; */
+  
+  filter: drop-shadow(0 0 0.5rem #fff);
 }
 
 .list-projects {
