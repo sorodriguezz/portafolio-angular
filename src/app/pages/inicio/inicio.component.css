@@ -1,6 +1,9 @@
 .btn-language {
-  width: 76px;
-  height: 76px;
+  /* width: 76px;
+  height: 76px; */
+
+  width: 120px;
+  height: 120px;
   
   /* mix-blend-mode: luminosity; */
   border: 0rem;
@@ -16,27 +19,28 @@
 }
 
 .list-projects {
-  width: 100vw;
+  width: 300vw;
   height: 700px;
 
   background: #FFFFFF;
   border-radius: 15px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
   .btn-language {
     width: 82px;
     height: 82px;
   }
 }
 
-@media (max-width: 767px) {
+
+@media (max-width: 433px) {
   .btn-language {
     width: 86px;
     height: 86px;
   }
 }
-
+/*
 @media (max-width: 533px) {
   .btn-language {
     width: 82px;
@@ -56,6 +60,6 @@
     width: 105px;
     height: 105px;
   }
-}
+} */
 
 
