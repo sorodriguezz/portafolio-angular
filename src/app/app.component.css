@@ -1,0 +1,28 @@
+.button-nav {
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+    border: 1px solid #ffffff !important;
+    border-radius: .5rem !important;
+    width: 106px !important;
+    height: 34px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.button-nav:hover {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.button-nav-light {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #ffffff !important;
+    border-radius: .5rem !important;
+    width: 106px !important;
+    height: 34px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
