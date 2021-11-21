@@ -1,21 +1,31 @@
 
-<div class="col col-md col-sm col-lg col-xl m-3">
-  <ul class="nav nav-pills justify-content-end">
-    <li class="nav-item m-1">
-      <a class="nav-link button-nav" routerLink="./inicio">Inicio</a>
-    </li>
-    <li class="nav-item m-1">
-      <a class="nav-link button-nav" routerLink="./curriculum">Currículum</a>
-    </li>
-    <li class="nav-item m-1">
-      <a class="nav-link button-nav" routerLink="./contacto">Contacto</a>
-    </li>
-    <li class="nav-item m-1">
-      <a class="nav-link button-nav-light" routerLink="./login">Login</a>
-    </li>
-  </ul>
+<div class="container">
+  <div class="row">
+    <div class="col col-md col-sm col-lg col-xl m-3">
+      <ul class="nav nav-pills justify-content-end">
+        <li class="nav-item m-1">
+          <a class="nav-link button-nav" routerLink="./inicio">Inicio</a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link button-nav" routerLink="./curriculum">Currículum</a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link button-nav" routerLink="./contacto">Contacto</a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link button-nav-login" routerLink="./login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container mt-5">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
 </div>
 
-<div class="container mt-5">
-<router-outlet></router-outlet>
-</div>
+
+

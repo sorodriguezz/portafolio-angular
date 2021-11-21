@@ -1,56 +1,129 @@
 
+<!-- mix-blend-mode: luminosity; -->
     <div class="row">
-        <div class="col-xs cool-sm col-lg m-3">
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-javascript-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-logo-php-40.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-typescript-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-sass-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-logotipo-de-java-coffee-cup-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-kotlin-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-python-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-golang-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-rubí-lenguaje-de-programación-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-logotipo-de-c-plus-plus-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-c-programación-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-sql-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-css3-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-html-5-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-c-sharp-logotipo-48.png" width="50px">
-            </button>
-            <button type="button" class="btn-language m-2">
-                <img src="../../../assets/img/icons8-dart-48.png" width="50px">
-            </button>
-        </div>
-        <div class="col-xs cool-sm col-lg list-projects m-2">
+        <div class="col m-3 d-flex justify-content-center">
+            <div class="row">
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosJS ? 'luminosity' : ''" (click)="javascript()"  class="btn-language ">
+                        <img src="../../../assets/img/icons8-javascript-48.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosPHP ? 'luminosity' : ''" (click)="php()" class="btn-language">
+                        <img src="../../../assets/img/icons8-logo-php-40.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosTS ? 'luminosity' : ''" (click)="typescript()" class="btn-language">
+                        <img src="../../../assets/img/icons8-typescript-48.png" width="50px">
+                    </button>
+                </div>
+               
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosSASS ? 'luminosity' : ''" (click)="sass()" class="btn-language">
+                        <img src="../../../assets/img/icons8-sass-48.png" width="50px">
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosSASS ? 'luminosity' : ''" (click)="java()" class="btn-language">
+                        <img src="../../../assets/img/icons8-logotipo-de-java-coffee-cup-48.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosKOTLIN ? 'luminosity' : ''" (click)="kotlin()" class="btn-language">
+                        <img src="../../../assets/img/icons8-kotlin-48.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosPYTHON ? 'luminosity' : ''" (click)="python()" class="btn-language">
+                        <img src="../../../assets/img/icons8-python-48.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosGO ? 'luminosity' : ''" (click)="goland()" class="btn-language">
+                        <img src="../../../assets/img/icons8-golang-48.png" width="50px">
+                    </button>
+                </div>
+            </div>
             
+            <div class="row">
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosRUBY ? 'luminosity' : ''" (click)="ruby()" class="btn-language">
+                        <img src="../../../assets/img/icons8-rubí-lenguaje-de-programación-48.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosCPLUSPLUS ? 'luminosity' : ''" (click)="cplusplus()" class="btn-language">
+                        <img src="../../../assets/img/icons8-logotipo-de-c-plus-plus-48.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosC ? 'luminosity' : ''" (click)="c()" class="btn-language">
+                        <img src="../../../assets/img/icons8-c-programación-48.png" width="50px">
+                    </button>
+                </div>
+               
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosSQL ? 'luminosity' : ''" (click)="sql()" class="btn-language">
+                        <img src="../../../assets/img/icons8-sql-48.png" width="50px">
+                    </button>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosCSS ? 'luminosity' : ''" (click)="css()" class="btn-language">
+                        <img src="../../../assets/img/icons8-css3-48.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosHTML ? 'luminosity' : ''" (click)="html()" class="btn-language">
+                        <img src="../../../assets/img/icons8-html-5-48.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosCSHARP ? 'luminosity' : ''" (click)="csharp()" class="btn-language">
+                        <img src="../../../assets/img/icons8-c-sharp-logotipo-48.png" width="50px">
+                    </button>
+                </div>
+                
+                <div class="col m-2">
+                    <button type="button" [style.mix-blend-mode]="existenProyectosDART ? 'luminosity' : ''" (click)="dart()" class="btn-language">
+                        <img src="../../../assets/img/icons8-dart-48.png" width="50px">
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="col list-projects m-2">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center mt-4">
+                        <img [src]="iconTitle" width="80px" height="80px">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        <label><b>{{ title }}</b></label>
+                    </div>
+                </div>
+                <div class="row">
+    
+                </div>
+            </div>
         </div>
     </div>

@@ -15,7 +15,7 @@
 .btn-language:hover {
   /* mix-blend-mode: normal; */
   
-  filter: drop-shadow(0 0 0.5rem #fff);
+  filter: drop-shadow(0 0 0.4rem #fff);
 }
 
 .list-projects {
@@ -25,21 +25,18 @@
   background: #FFFFFF;
   border-radius: 15px;
 }
-
-@media (max-width: 1400px) {
-  .btn-language {
-    width: 82px;
-    height: 82px;
-  }
+ 
+@media (max-width: 1200px) {
+ 
 }
 
-
+/*
 @media (max-width: 433px) {
   .btn-language {
     width: 86px;
     height: 86px;
   }
-}
+} */
 /*
 @media (max-width: 533px) {
   .btn-language {

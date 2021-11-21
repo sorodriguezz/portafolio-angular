@@ -10,6 +10,25 @@
     justify-content: center !important;
 }
 
+.button-nav-login {
+    background-color: rgb(160, 160, 160) !important;
+    color: rgb(255, 255, 255) !important;
+    border: 1px solid #ffffff !important;
+    border-radius: .5rem !important;
+    width: 106px !important;
+    height: 34px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.button-nav-login:hover {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+    width: 108px !important;
+    height: 34px !important;
+}
+
 .button-nav:hover {
     background-color: rgb(255, 255, 255) !important;
     color: rgb(0, 0, 0) !important;
@@ -27,7 +46,7 @@
     justify-content: center !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
     .justify-content-end {
         justify-content: center !important;
     }
