@@ -13,17 +13,17 @@ export const lenguajes = [
       },
       {
         id: 2,
-        nombre: 'Proyecto 2',
+        nombre: 'API para autenticación',
         imagen: '../../assets/img/portafolio.jpg',
-        url_repo: '#',
-        descripcion: 'segundo proyecto de javascript'
+        url_repo: 'https://github.com/soRodriguezz/auth-server-express-nodejs',
+        descripcion: 'API para login de usuarios en NodeJS'
       },
       {
         id: 3,
-        nombre: 'Proyecto 3',
+        nombre: 'Marcadores para Links',
         imagen: '../../assets/img/portafolio.jpg',
-        url_repo: '#',
-        descripcion: 'tercer proyecto de javascript'
+        url_repo: 'https://github.com/soRodriguezz/nodejs-mysql/blob/master/src/routes/authentication.js',
+        descripcion: 'Aplicación para marcadores de links en NodeJS y MySQL'
       },
       {
         id: 4,
