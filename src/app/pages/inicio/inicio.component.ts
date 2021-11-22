@@ -9,8 +9,8 @@ import { LenguajesService } from 'src/app/services/lenguajes.service';
 })
 export class InicioComponent implements OnInit {
 
-    public lenguajes;
-    public proyectos;
+    public lenguajes = [];
+    public proyectos = [];
     public iconoCaja = '../../../assets/img/icons8-javascript-48.png';
     public nombreLenguaje = 'javascript';
   
@@ -37,7 +37,6 @@ export class InicioComponent implements OnInit {
 
         this.iconoCaja = lenguajeSeleccionado[0].imagen;
         this.nombreLenguaje = lenguajeSeleccionado[0].nombre;
-
         this.proyectos = lenguajeSeleccionado[0].proyectos;
 
       });
