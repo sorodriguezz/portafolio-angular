@@ -11,9 +11,9 @@
 }
 
 .button-nav-login {
-    background-color: rgb(160, 160, 160) !important;
-    color: rgb(255, 255, 255) !important;
-    border: 1px solid #ffffff !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+    border: 1px solid #6f6f6f !important;
     border-radius: .5rem !important;
     width: 106px !important;
     height: 34px !important;
@@ -23,9 +23,9 @@
 }
 
 .button-nav-login:hover {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: rgb(220, 218, 218) !important;
     color: rgb(0, 0, 0) !important;
-    width: 108px !important;
+    width: 106px !important;
     height: 34px !important;
 }
 

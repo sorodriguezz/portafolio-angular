@@ -20,6 +20,7 @@ export class InicioComponent implements OnInit {
   
     ngOnInit(  ) {
       this.cargaLenguajes();
+      this.listarProyecto(1);
     }
     
     cargaLenguajes() {

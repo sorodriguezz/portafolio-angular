@@ -5,20 +5,19 @@
             <div class="row">
 
                 <div class="col m-2" *ngFor="let lenguaje of lenguajes">
-                    <button (click)="listarProyecto( lenguaje.id )" type="button" [style.mix-blend-mode]="false ? 'luminosity' : ''" class="btn-language ">
+                    <button (click)="listarProyecto( lenguaje.id )" type="button"  class="btn-language ">
                         <img src="{{ lenguaje.imagen }}" width="50px">
                     </button>
                 </div>
                 
             </div>
-            
         </div>
 
         <div class="col list-projects m-2">
             <div class="container">
                 <div class="row">
                     <div class="text-center mt-4">
-                        <img [src]="iconoCaja" width="80px" height="80px">
+                        <img [src]="iconoCaja" width="48px" height="48px">
                     </div>
                 </div>
                 <div class="row">
@@ -27,27 +26,26 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="p-3 mb-2"  style="width: 100%; height: 500px; overflow: scroll;">
-                        <div class="card mt-1 mb-1" *ngFor="let proyecto of proyectos" >
+                    <div class="p-3 mb-2" style="width: 100%; height: 500px; overflow: scroll;">
+                        <div style="border-radius: 15px" class="card border border-dark mt-2 mb-2" *ngFor="let proyecto of proyectos" >
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="sdfds" alt="">
+                                    <div class="col-md-3" style="display: flex;align-items: center;">
+                                        <img style="mix-blend-mode: luminosity;" src="{{proyecto.imagen}}" width="120px" height="60px" alt="">
                                     </div>
                                     <div class="col-md-7">
                                         <h5 class="card-title">{{ proyecto.nombre }}</h5>
                                         <p class="card-text">{{ proyecto.descripcion }}</p>
                                     </div>
-                                    <div class="col-md-2">
-                                        <a [routerLink]="['/proyecto', proyecto.id]" class="btn btn-primary">Ver</a>
+                                    <div class="col-md-2" style="display: flex;align-items: center;">
+                                        <a target="_blank" href="{{ proyecto.url_repo }}"  class="btn btn-light">
+                                            <img src="../../../assets/img/logotipo-de-github.png" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                       
-
-                    <!-- <label *ngFor="let proyecto of proyectos"> {{proyecto.nombre}} </label> -->
                 </div>
             </div>
         </div>
