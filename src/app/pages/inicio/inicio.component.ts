@@ -26,7 +26,6 @@ export class InicioComponent implements OnInit {
     cargaLenguajes() {
       this.lenguajesService.getLenguajes().subscribe(resp => {
         this.lenguajes = resp;
-        console.log(resp);
       });
     }
 

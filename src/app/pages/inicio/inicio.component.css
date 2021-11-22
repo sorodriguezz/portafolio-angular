@@ -15,7 +15,7 @@
 .btn-language:hover {
   /* mix-blend-mode: normal; */
   
-  filter: drop-shadow(0 0 0.4rem #fff);
+  filter: drop-shadow(0 0 0.2rem #fff);
 }
 
 .list-projects {
