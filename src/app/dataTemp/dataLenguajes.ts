@@ -28,38 +28,6 @@ export const lenguajes = [
           descripcion: ''
         }
       },
-      {
-        id: 3,
-        nombre: 'Marcadores para Links',
-        imagen: '../../assets/img/portafolio.jpg',
-        url_repo: 'https://github.com/soRodriguezz/nodejs-mysql/blob/master/src/routes/authentication.js',
-        descripcion: 'Aplicación para marcadores de links en NodeJS y MySQL',
-        modal: {}
-      },
-      {
-        id: 4,
-        nombre: 'Proyecto 4',
-        imagen: '../../assets/img/portafolio.jpg',
-        url_repo: '#',
-        descripcion: 'cuarto proyecto de javascript',
-        modal: {}
-      },
-      {
-        id: 5,
-        nombre: 'Proyecto 5',
-        imagen: '../../assets/img/portafolio.jpg',
-        url_repo: '#',
-        descripcion: 'quinto proyecto de javascript',
-        modal: {}
-      },
-      {
-        id: 6,
-        nombre: 'Proyecto 6',
-        imagen: '../../assets/img/portafolio.jpg',
-        url_repo: '#',
-        descripcion: 'sexto proyecto de javascript',
-        modal: {}
-      },
     ]
   },
   {
@@ -131,34 +99,4 @@ export const lenguajes = [
     imagen: '../../assets/img/node-js.png',
     proyectos: []
   },
-  {
-    id: 8,
-    nombre: 'Dart',
-    imagen: '../../assets/img/icons8-dart-48.png',
-    proyectos: []
-  },
-  {
-    id: 9,
-    nombre: 'C#',
-    imagen: '../../assets/img/icons8-c-sharp-logotipo-48.png',
-    proyectos: []
-  },
-  {
-    id: 10,
-    nombre: 'C++',
-    imagen: '../../assets/img/icons8-logotipo-de-c-plus-plus-48.png',
-    proyectos: []
-  },
-  {
-    id: 11,
-    nombre: 'C',
-    imagen: '../../assets/img/icons8-c-programación-48.png',
-    proyectos: []
-  },
-  {
-    id: 12,
-    nombre: 'SQL',
-    imagen: '../../assets/img/icons8-sql-48.png',
-    proyectos: []
-  }
 ];

@@ -2,9 +2,9 @@
   /* width: 76px;
   height: 76px; */
 
-  width: 120px;
+  /* width: 120px;
   height: 120px;
-  
+   */
   /* mix-blend-mode: luminosity; */
   border: 0rem;
   filter: none;
@@ -19,8 +19,8 @@
 }
 
 .list-projects {
-  width: 300vw;
-  height: 700px;
+  /* width: 300vw;
+  height: 700px; */
 
   background: #FFFFFF;
   border-radius: 15px;
