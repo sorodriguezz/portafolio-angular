@@ -8,6 +8,10 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { CurriculumComponent } from './pages/curriculum/curriculum.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { LoginComponent } from './pages/login/login.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalProjectComponent } from './modal-project/modal-project.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -15,12 +19,16 @@ import { LoginComponent } from './pages/login/login.component';
     InicioComponent,
     CurriculumComponent,
     ContactoComponent,
-    LoginComponent
+    LoginComponent,
+    ModalProjectComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

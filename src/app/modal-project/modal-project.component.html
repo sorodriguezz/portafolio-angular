@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>{{ modal.nombre }}</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="container">
+        <div class="row text-center">
+            <img src="{{modal.modal.imagen}}" width="900" height="450" >
+        </div>
+    
+        <hr>
+    
+        <div class="row">
+            <p class="text-break">{{ modal.modal.descripcion }}</p>
+        </div>
+
+        <div *ngIf="modal.modal.demo.length > 0" class="row">
+            <a href="{{ modal.modal.demo }}" target="_blank" class="btn btn-primary">
+                Demo
+            </a>
+        </div>
+    </div>
+    
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button class="btn btn-danger" mat-button mat-dialog-close>Cancelar</button>
+</mat-dialog-actions>

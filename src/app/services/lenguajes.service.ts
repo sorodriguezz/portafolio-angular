@@ -7,6 +7,8 @@ import {lenguajes} from '../dataTemp/dataLenguajes'
 })
 export class LenguajesService {
 
+  public proyectoSeleccionado: any;
+
   constructor() {
     
   }

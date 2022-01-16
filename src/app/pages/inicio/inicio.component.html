@@ -2,10 +2,10 @@
 <!-- mix-blend-mode: luminosity; -->
     <div class="row">
         <div class="col m-3 d-flex justify-content-center">
-            <div class="row">
+            <div class="row" *ngFor="let lenguaje of lenguajes">
 
-                <div class="col m-2" *ngFor="let lenguaje of lenguajes">
-                    <button (click)="listarProyecto( lenguaje.id )" type="button"  class="btn-language ">
+                <div class="col m-2" >
+                    <button (click)="listarProyecto( lenguaje.id )" type="button"  class="btn-language btn-block">
                         <img src="{{ lenguaje.imagen }}" width="50px">
                     </button>
                 </div>
@@ -35,8 +35,9 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-3" style="display: flex;align-items: center;">
-                                        <img  src="{{proyecto.imagen}}" width="120px" height="60px" alt="">
-                                        <!-- style="mix-blend-mode: luminosity;" -->
+                                        
+                                        <a mat-button (click)="abrirModal(proyecto)"><img  [attr.src]="proyecto.imagen.length > 0 ? proyecto.imagen : '../../../assets/img/portafolio.jpg'" width="120px" height="60px" alt=""></a>
+                                         <!-- style="mix-blend-mode: luminosity;" -->
                                     </div>
                                     <div class="col-md-7">
                                         <h5 class="card-title">{{ proyecto.nombre }}</h5>
