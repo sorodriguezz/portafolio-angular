@@ -25,6 +25,11 @@
   background: #FFFFFF;
   border-radius: 15px;
 }
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
 /*  
 @media (max-width: 1200px) {
  

@@ -1,15 +1,15 @@
 
 <!-- mix-blend-mode: luminosity; -->
     <div class="row">
-        <div class="col-3" style="height: 80vh; overflow: auto;">
+        <div class="col-3 scroll" style="height: 80vh; overflow: auto;">
             <div class="m-2 d-grid gap-2" *ngFor="let lenguaje of lenguajes">
-                    <button (click)="listarProyecto( lenguaje.id )" type="button"  class="btn-language">
-                        <img src="{{ lenguaje.imagen }}" width="48px">
-                    </button>
+                <button (click)="listarProyecto( lenguaje.id )" type="button"  class="btn-language p-3">
+                    <img src="{{ lenguaje.imagen }}" width="48px">
+                </button>
             </div>
         </div>
 
-        <div class="col-9 list-projects" style="height: 80vh">
+        <div class="col-8 list-projects" style="height: 80vh">
             <div class="container">
                 <div class="row">
                     <div class="text-center mt-4">
@@ -26,22 +26,26 @@
                         No existen proyectos para este lenguaje
                     </div>
 
-                    <div class="p-3 mb-2" style="height: 65vh;overflow: auto;">
+                    <div class="p-3 mb-2 scroll" style="height: 65vh;overflow: auto;">
                         <div style="border-radius: 15px" class="card border border-dark mt-2 mb-2" *ngFor="let proyecto of proyectos" >
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-3" style="display: flex;align-items: center;">
-                                        
-                                        <a mat-button (click)="abrirModal(proyecto)"><img  [attr.src]="proyecto.imagen.length > 0 ? proyecto.imagen : '../../../assets/img/portafolio.jpg'" width="120px" height="60px" alt=""></a>
+                                        <a class="btn" mat-button (click)="abrirModal(proyecto)">
+                                            <img  
+                                                [attr.src]="proyecto.imagen.length > 0 ? proyecto.imagen : '../../../assets/img/portafolio.jpg'"
+                                                width="120px"
+                                                height="60px">
+                                        </a>
                                          <!-- style="mix-blend-mode: luminosity;" -->
                                     </div>
                                     <div class="col-md-7">
                                         <h5 class="card-title">{{ proyecto.nombre }}</h5>
                                         <p class="card-text">{{ proyecto.descripcion }}</p>
                                     </div>
-                                    <div class="col-md-2" style="display: flex;align-items: center;">
-                                        <a target="_blank" href="{{ proyecto.url_repo }}"  class="btn ">
-                                            <img src="../../../assets/img/logotipo-de-github.png" alt="">
+                                    <div class="col-md-2" style="display: flex;align-items: center;justify-content: flex-end">
+                                        <a target="_blank" href="{{ proyecto.url_repo }}"  class="btn">
+                                            <img src="../../../assets/img/github.png">
                                         </a>
                                     </div>
                                 </div>

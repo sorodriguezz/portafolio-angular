@@ -34,40 +34,7 @@ export const lenguajes = [
     id: 2,
     nombre: 'JS vanilla',
     imagen: '../../assets/img/javascript.png',
-    proyectos: [
-      {
-        id: 1,
-        nombre: 'Proyecto PHP 1',
-        imagen: '../../assets/img/portafolio.jpg',
-        url_repo: '#',
-        descripcion: 'Proyecto PHP 1',
-        modal: {}
-      },
-      {
-        id: 2,
-        nombre: 'Proyecto PHP 2',
-        imagen: '../../assets/img/portafolio.jpg',
-        url_repo: '#',
-        descripcion: 'Proyecto PHP 2',
-        modal: {}
-      },
-      {
-        id: 3,
-        nombre: 'Proyecto PHP 3',
-        imagen: '../../assets/img/portafolio.jpg',
-        url_repo: '#',
-        descripcion: 'Proyecto PHP 3',
-        modal: {}
-      },
-      {
-        id: 4,
-        nombre: 'Proyecto PHP 4',
-        imagen: '../../assets/img/portafolio.jpg',
-        url_repo: '#',
-        descripcion: 'Proyecto PHP 4',
-        modal: {}
-      }
-    ]
+    proyectos: []
   },
   {
     id: 3,
@@ -97,6 +64,31 @@ export const lenguajes = [
     id: 7,
     nombre: 'Node JS',
     imagen: '../../assets/img/node-js.png',
+    proyectos: []
+  },
+  {
+    id: 8,
+    nombre: 'Redux',
+    imagen: '../../assets/img/redux.png',
+    proyectos: [
+      {
+        id: 1,
+        nombre: 'Proyecto con effects y redux',
+        imagen: '../../assets/project/effects-angular-redux.png',
+        url_repo: 'https://github.com/soRodriguezz/http-effects-angular-redux',
+        descripcion: '',
+        modal: {
+          imagen: '../../assets/project/effects-angular-redux.png',
+          demo: 'https://sorodriguezz.github.io/http-effects-angular-redux/',
+          descripcion: '',
+        }
+      },
+    ]
+  },
+  {
+    id: 9,
+    nombre: 'Spring Boot',
+    imagen: '../../assets/img/spring.png',
     proyectos: []
   },
 ];
