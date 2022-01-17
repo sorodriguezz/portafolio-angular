@@ -13,8 +13,9 @@ export class InicioComponent implements OnInit {
 
   public lenguajes = [];
   public proyectos = [];
-  public iconoCaja = '../../../assets/img/icons8-javascript-48.png';
+  public iconoCaja = '';
   public nombreLenguaje = 'javascript';
+  public cantidadProyectos: any = 0;
 
   constructor(
     private router: Router, 
@@ -37,6 +38,8 @@ export class InicioComponent implements OnInit {
     this.lenguajesService.getLenguajes().subscribe(resp => {
 
       let lenguajeSeleccionado = resp.filter(proyecto => proyecto.id == id);
+
+      this.cantidadProyectos = lenguajeSeleccionado[0].proyectos.length;
 
       this.iconoCaja = lenguajeSeleccionado[0].imagen;
       this.nombreLenguaje = lenguajeSeleccionado[0].nombre;

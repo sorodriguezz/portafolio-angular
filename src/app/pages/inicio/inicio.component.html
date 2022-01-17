@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="col-8 list-projects" style="height: 80vh">
+        <div class="col-8 list-projects" style="height: 81vh">
             <div class="container">
                 <div class="row">
                     <div class="text-center mt-4">
@@ -21,29 +21,30 @@
                         <label><b>{{ nombreLenguaje | uppercase }}</b></label>
                     </div>
                 </div>
-                <div class="row mt-3" >
+                <div class="row mt-3">
                     <div class="alert alert-dark text-center mt-2" *ngIf="proyectos.length === 0" role="alert" >
-                        No existen proyectos para este lenguaje
+                        No existen proyectos
                     </div>
 
-                    <div class="p-3 mb-2 scroll" style="height: 65vh;overflow: auto;">
+                    <div *ngIf="proyectos.length !== 0" class="p-3 mb-2 scroll" style="height: 65vh;overflow: auto;">
                         <div style="border-radius: 15px" class="card border border-dark mt-2 mb-2" *ngFor="let proyecto of proyectos" >
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-3" style="display: flex;align-items: center;">
                                         <a class="btn" mat-button (click)="abrirModal(proyecto)">
-                                            <img  
+                                            <img
+                                                style="border: 1px solid; color: black;"
                                                 [attr.src]="proyecto.imagen.length > 0 ? proyecto.imagen : './assets/img/portafolio.jpg'"
                                                 width="120px"
                                                 height="60px">
                                         </a>
                                          <!-- style="mix-blend-mode: luminosity;" -->
                                     </div>
-                                    <div class="col-md-7">
+                                    <div class="col-md-8">
                                         <h5 class="card-title">{{ proyecto.nombre }}</h5>
                                         <p class="card-text">{{ proyecto.descripcion }}</p>
                                     </div>
-                                    <div class="col-md-2" style="display: flex;align-items: center;justify-content: flex-end">
+                                    <div class="col-md-1" style="display: flex;align-items: center;justify-content: flex-end">
                                         <a target="_blank" href="{{ proyecto.url_repo }}"  class="btn">
                                             <img src="./assets/img/github.png">
                                         </a>
@@ -51,6 +52,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div *ngIf="proyectos.length !== 0" class="text-end">
+                        <p>{{ cantidadProyectos }} {{ cantidadProyectos == 1 ? 'proyecto' : 'proyectos' }}</p>
                     </div>
                 </div>
             </div>

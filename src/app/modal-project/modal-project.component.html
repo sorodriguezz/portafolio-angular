@@ -1,13 +1,13 @@
-<h2 mat-dialog-title>{{ modal.nombre }}</h2>
+<h1 mat-dialog-title>{{ modal.nombre }}</h1>
 <mat-dialog-content class="mat-typography">
     <div class="container">
-        <div class="row text-center">
-            <img src="{{modal.modal.imagen}}" width="900" height="450" >
+        <div class="text-center">
+            <img style="border: 2px solid; color: black;" src="{{modal.modal.imagen}}" width="900" height="400" >
         </div>
     
         <hr>
     
-        <div class="row">
+        <div class="row mb-5">
             <p class="text-break">{{ modal.modal.descripcion }}</p>
         </div>
 
@@ -17,8 +17,7 @@
             </a>
         </div>
     </div>
-    
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button class="btn btn-danger" mat-button mat-dialog-close>Cancelar</button>
+  <button class="btn btn-secondary" mat-button mat-dialog-close>Cancelar</button>
 </mat-dialog-actions>
