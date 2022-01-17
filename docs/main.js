@@ -59,10 +59,10 @@ const lenguajes = [
         proyectos: [
             {
                 id: 1,
-                nombre: 'Proyecto API JIKAN',
+                nombre: 'API JIKAN',
                 imagen: './assets/project/proyecto_jikan.png',
                 url_repo: 'https://github.com/soRodriguezz/anime-jikan-angular',
-                descripcion: 'Realizado con Angular consumiendo API JIKAN',
+                descripcion: 'Proyecto realizado con Angular consumiendo API JIKAN',
                 modal: {
                     imagen: './assets/project/proyecto_jikan.png',
                     demo: 'https://sorodriguezz.github.io/anime-jikan-angular/',
@@ -71,21 +71,129 @@ const lenguajes = [
             },
             {
                 id: 2,
-                nombre: 'Proyecto API RickAndMorty',
+                nombre: 'API RickAndMorty',
                 imagen: './assets/project/proyecto_rickandmorty.png',
                 url_repo: 'https://github.com/soRodriguezz/api-rickandmorty-angular',
-                descripcion: 'API para login de usuarios en NodeJS',
+                descripcion: 'App que usa la API de RickAndMorty para obtener información de los personajes',
                 modal: {
                     imagen: './assets/project/proyecto_rickandmorty.png',
                     demo: 'https://sorodriguezz.github.io/api-rickandmorty-angular/#',
-                    descripcion: ''
+                    descripcion: 'Aplicacion para obtener información de los personajes de RickAndMorty, usando la API de RickAndMorty. Usa paginación de bootstrap.',
+                }
+            },
+            {
+                id: 3,
+                nombre: 'Angular con Effects y Redux',
+                imagen: './assets/project/effects-angular-redux.png',
+                url_repo: 'https://github.com/soRodriguezz/http-effects-angular-redux',
+                descripcion: 'Aplicación de Angular ocupando effects y redux',
+                modal: {
+                    imagen: './assets/project/effects-angular-redux.png',
+                    demo: 'https://sorodriguezz.github.io/http-effects-angular-redux/',
+                    descripcion: 'Aplicación realizada en Angular con effects y redux para obtener información de la API reqres.in.',
+                }
+            },
+            {
+                id: 4,
+                nombre: 'Session storage, onDestroy y Routes',
+                imagen: './assets/project/session-storage.png',
+                url_repo: 'https://github.com/soRodriguezz/ondestroy-cambio-pagina-angular',
+                descripcion: 'Aplicación de Angular ocupando Session storage, onDestroy y Routes',
+                modal: {
+                    imagen: './assets/project/session-storage.png',
+                    demo: 'https://sorodriguezz.github.io/ondestroy-cambio-pagina-angular/',
+                    descripcion: 'Aplicación que simula el cambio de pantalla levantando un modal de alerta. Al presionar SI, realiza el cambio de página, el cual es el cierre del componente y activa el ngOnDestroy. Al presionar CANCELAR, se cierra el modal, vuelve a la página desde donde salio y completa los campos con los datos que tenia cargados antes de salir. Esos datos los almacena en session storage por un momento.',
+                }
+            },
+            {
+                id: 5,
+                nombre: 'Subida de archivos Base64 en Angular',
+                imagen: './assets/project/archivo-base64.png',
+                url_repo: 'https://github.com/soRodriguezz/base64-angular',
+                descripcion: 'Aplicación para manejo de subida de archivos en base64',
+                modal: {
+                    imagen: './assets/project/archivo-base64.png',
+                    demo: 'https://sorodriguezz.github.io/base64-angular/',
+                    descripcion: 'Aplicación en Angular que simula la subida de archivos. El dato lo almacena en base64, muestra el nombre del archivo y habilitar el botón para borrar el archivo subido. Para este ejemplo muestra el base64 en consola, el cual se puede copiar y pegar en el navegador para descargar el archivo.',
+                }
+            },
+            {
+                id: 6,
+                nombre: 'Sort tablas de Bootstrap',
+                imagen: './assets/project/sort-table-angular.png',
+                url_repo: 'https://github.com/soRodriguezz/table-pagination-sort-angular',
+                descripcion: 'Aplicación para ordenamiento de columnas de tablas de Bootstrap',
+                modal: {
+                    imagen: './assets/project/sort-table-angular.png',
+                    demo: 'https://sorodriguezz.github.io/table-pagination-sort-angular/',
+                    descripcion: 'Aplicación en Angular que muestra una tabla con paginación y ordenamiento de columnas. El ordenamiento se realiza con el botón de ordenamiento de la columna a traves de una directiva persinalizada de Angular.',
+                }
+            },
+            {
+                id: 7,
+                nombre: 'Límite de caracteres en textarea',
+                imagen: './assets/project/text-area-angular.png',
+                url_repo: 'https://github.com/soRodriguezz/textarea-form-angular',
+                descripcion: 'Text area con límite de caracteres en Angular',
+                modal: {
+                    imagen: './assets/project/text-area-angular.png',
+                    demo: 'https://sorodriguezz.github.io/textarea-form-angular/',
+                    descripcion: 'Aplicación en Angular que muestra un text area con un límite de caracteres. El límite se puede configurar en el componente. A su vez muestra en tiempo real los caracteres escritos.',
+                }
+            },
+            {
+                id: 8,
+                nombre: 'DataTable en Angular',
+                imagen: './assets/project/data-table-angular.png',
+                url_repo: 'https://github.com/soRodriguezz/data-table-angular',
+                descripcion: 'Librería DataTable en Angular usando restapiexample',
+                modal: {
+                    imagen: './assets/project/data-table-angular.png',
+                    demo: 'https://sorodriguezz.github.io/data-table-angular/',
+                    descripcion: 'Aplicación de Angular que usa la librería DataTable para mostrar una tabla con paginación y ordenamiento. La tabla se obtiene de la API de restapiexample. De igual manera muestra los registros por página, la cantidad total de registros y la configuración de registros a mostrar por combobox que en el ejemplo se visualiza de 5 en 5. Y contiene una barra de busqueda, el cual busca en todas las columnas y registros en la tabla',
+                }
+            },
+            {
+                id: 9,
+                nombre: 'Todo Redux Angular',
+                imagen: './assets/project/todo-redux-angular.png',
+                url_repo: 'https://github.com/soRodriguezz/todo-app-redux-angular',
+                descripcion: 'Uso de Redux en aplicación TODO en Angular',
+                modal: {
+                    imagen: './assets/project/todo-redux-angular.png',
+                    demo: 'https://sorodriguezz.github.io/todo-app-redux-angular/',
+                    descripcion: 'Aplicación de tareas construida en Angular usando Redux. Realiza limpiado de tareas, filtro de pendiente y completados.',
+                }
+            },
+            {
+                id: 10,
+                nombre: 'API Pokémon',
+                imagen: './assets/project/apipokemon-angular.png',
+                url_repo: 'https://github.com/soRodriguezz/pokemon-angular',
+                descripcion: 'Pruebas realizadas a API de Pokémon, realizado en Angular',
+                modal: {
+                    imagen: './assets/project/apipokemon-angular.png',
+                    demo: 'https://sorodriguezz.github.io/pokemon-angular/',
+                    descripcion: 'Aplicación de Angular que muestra el pokémon según el criterio en la barra de busqueda. De momento solo muestra tipo y nombre del pokémon',
+                }
+            },
+            {
+                id: 11,
+                nombre: 'Login usuarios',
+                imagen: './assets/project/login-users-angular.png',
+                url_repo: 'https://github.com/soRodriguezz/auth-app-angular',
+                descripcion: 'Aplicación de Angular para login de usuarios',
+                modal: {
+                    imagen: './assets/project/login-users-angular.png',
+                    demo: 'https://app-angular-nodejs-auth.herokuapp.com/auth/login',
+                    descripcion: 'Proyecto que usa Angular, MongoDB y NodeJS para el login de usuarios. La aplicación permite el registro de usuarios, el login y el logout. Los registros quedan guardados en una colección de MongoDB, y el login se realiza con un token enviado por la API. El token se guarda en el localStorage del navegador y se usa para el logout.',
                 }
             },
         ]
     },
     {
         id: 2,
-        nombre: 'JS vanilla',
+        nombre: 'JavaScript',
         imagen: './assets/img/javascript.png',
         proyectos: []
     },
@@ -117,7 +225,20 @@ const lenguajes = [
         id: 7,
         nombre: 'Node JS',
         imagen: './assets/img/node-js.png',
-        proyectos: []
+        proyectos: [
+            {
+                id: 1,
+                nombre: 'API Rest Usuarios',
+                imagen: '',
+                url_repo: 'https://github.com/soRodriguezz/auth-server-express-nodejs',
+                descripcion: 'API para login de usuiarios en Node JS',
+                modal: {
+                    imagen: './assets/project/api-usuario-nodej.png',
+                    demo: 'https://app-angular-nodejs-auth.herokuapp.com/auth/login',
+                    descripcion: 'Proyecto que expone una API por el puerto 4000. Contiene configuración de CORS, autenticación con JWT, Hash de contraseñas, Conexión con MongoDB Cloud, configuración de dotenv y generación de JWT renovados. En el directorio public contiene el codigo Angular productivo',
+                }
+            },
+        ]
     },
     {
         id: 8,
@@ -126,14 +247,26 @@ const lenguajes = [
         proyectos: [
             {
                 id: 1,
-                nombre: 'Proyecto con effects y redux',
+                nombre: 'Angular con Effects y Redux',
                 imagen: './assets/project/effects-angular-redux.png',
                 url_repo: 'https://github.com/soRodriguezz/http-effects-angular-redux',
-                descripcion: '',
+                descripcion: 'Aplicación de Angular ocupando effects y redux',
                 modal: {
                     imagen: './assets/project/effects-angular-redux.png',
                     demo: 'https://sorodriguezz.github.io/http-effects-angular-redux/',
-                    descripcion: '',
+                    descripcion: 'Aplicación realizada en Angular con effects y redux para obtener información de la API reqres.in.',
+                }
+            },
+            {
+                id: 2,
+                nombre: 'Todo Redux Angular',
+                imagen: './assets/project/todo-redux-angular.png',
+                url_repo: 'https://github.com/soRodriguezz/todo-app-redux-angular',
+                descripcion: 'Uso de Redux en aplicación TODO en Angular',
+                modal: {
+                    imagen: './assets/project/todo-redux-angular.png',
+                    demo: 'https://sorodriguezz.github.io/todo-app-redux-angular/',
+                    descripcion: 'Aplicación de tareas construida en Angular usando Redux. Realiza limpiado de tareas, filtro de pendiente y completados.',
                 }
             },
         ]
@@ -262,60 +395,80 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function InicioComponent_div_2_Template(rf, ctx) { if (rf & 1) {
-    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "button", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function InicioComponent_div_2_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r5); const lenguaje_r3 = ctx.$implicit; const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r4.listarProyecto(lenguaje_r3.id); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function InicioComponent_div_2_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r6); const lenguaje_r4 = ctx.$implicit; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r5.listarProyecto(lenguaje_r4.id); });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "img", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const lenguaje_r3 = ctx.$implicit;
+    const lenguaje_r4 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("src", lenguaje_r3.imagen, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("src", lenguaje_r4.imagen, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
 } }
 function InicioComponent_div_15_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " No existen proyectos para este lenguaje ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, " No existen proyectos ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } }
-function InicioComponent_div_17_Template(rf, ctx) { if (rf & 1) {
-    const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 17);
+function InicioComponent_div_16_div_1_Template(rf, ctx) { if (rf & 1) {
+    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "a", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function InicioComponent_div_17_Template_a_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r8); const proyecto_r6 = ctx.$implicit; const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r7.abrirModal(proyecto_r6); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](5, "img", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "a", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function InicioComponent_div_16_div_1_Template_a_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r10); const proyecto_r8 = ctx.$implicit; const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2); return ctx_r9.abrirModal(proyecto_r8); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](5, "img", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "h5", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "h5", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "p", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "p", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "div", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "a", 25);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](13, "img", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "div", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "a", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](13, "img", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const proyecto_r6 = ctx.$implicit;
+    const proyecto_r8 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("src", proyecto_r6.imagen.length > 0 ? proyecto_r6.imagen : "./assets/img/portafolio.jpg", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("src", proyecto_r8.imagen.length > 0 ? proyecto_r8.imagen : "./assets/img/portafolio.jpg", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](proyecto_r6.nombre);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](proyecto_r8.nombre);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](proyecto_r6.descripcion);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](proyecto_r8.descripcion);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("href", proyecto_r6.url_repo, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate"]("href", proyecto_r8.url_repo, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
+} }
+function InicioComponent_div_16_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, InicioComponent_div_16_div_1_Template, 14, 4, "div", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r2.proyectos);
+} }
+function InicioComponent_div_17_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 29);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate2"]("", ctx_r3.cantidadProyectos, " ", ctx_r3.cantidadProyectos == 1 ? "proyecto" : "proyectos", "");
 } }
 class InicioComponent {
     constructor(router, lenguajesService, dialog) {
@@ -324,8 +477,9 @@ class InicioComponent {
         this.dialog = dialog;
         this.lenguajes = [];
         this.proyectos = [];
-        this.iconoCaja = '../../../assets/img/icons8-javascript-48.png';
+        this.iconoCaja = '';
         this.nombreLenguaje = 'javascript';
+        this.cantidadProyectos = 0;
     }
     ngOnInit() {
         this.cargaLenguajes();
@@ -339,6 +493,7 @@ class InicioComponent {
     listarProyecto(id) {
         this.lenguajesService.getLenguajes().subscribe(resp => {
             let lenguajeSeleccionado = resp.filter(proyecto => proyecto.id == id);
+            this.cantidadProyectos = lenguajeSeleccionado[0].proyectos.length;
             this.iconoCaja = lenguajeSeleccionado[0].imagen;
             this.nombreLenguaje = lenguajeSeleccionado[0].nombre;
             this.proyectos = lenguajeSeleccionado[0].proyectos;
@@ -353,7 +508,7 @@ class InicioComponent {
     }
 }
 InicioComponent.ɵfac = function InicioComponent_Factory(t) { return new (t || InicioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_services_lenguajes_service__WEBPACK_IMPORTED_MODULE_3__["LenguajesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__["MatDialog"])); };
-InicioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: InicioComponent, selectors: [["app-inicio"]], decls: 18, vars: 7, consts: [[1, "row"], [1, "col-3", "scroll", 2, "height", "80vh", "overflow", "auto"], ["class", "m-2 d-grid gap-2", 4, "ngFor", "ngForOf"], [1, "col-8", "list-projects", 2, "height", "80vh"], [1, "container"], [1, "text-center", "mt-4"], ["width", "48px", "height", "48px", 3, "src"], [1, "text-center"], [1, "row", "mt-3"], ["class", "alert alert-dark text-center mt-2", "role", "alert", 4, "ngIf"], [1, "p-3", "mb-2", "scroll", 2, "height", "65vh", "overflow", "auto"], ["style", "border-radius: 15px", "class", "card border border-dark mt-2 mb-2", 4, "ngFor", "ngForOf"], [1, "m-2", "d-grid", "gap-2"], ["type", "button", 1, "btn-language", "p-3", 3, "click"], ["width", "48px", 3, "src"], ["role", "alert", 1, "alert", "alert-dark", "text-center", "mt-2"], [1, "card", "border", "border-dark", "mt-2", "mb-2", 2, "border-radius", "15px"], [1, "card-body"], [1, "col-md-3", 2, "display", "flex", "align-items", "center"], ["mat-button", "", 1, "btn", 3, "click"], ["width", "120px", "height", "60px"], [1, "col-md-7"], [1, "card-title"], [1, "card-text"], [1, "col-md-2", 2, "display", "flex", "align-items", "center", "justify-content", "flex-end"], ["target", "_blank", 1, "btn", 3, "href"], ["src", "./assets/img/github.png"]], template: function InicioComponent_Template(rf, ctx) { if (rf & 1) {
+InicioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: InicioComponent, selectors: [["app-inicio"]], decls: 18, vars: 8, consts: [[1, "row"], [1, "col-3", "scroll", 2, "height", "80vh", "overflow", "auto"], ["class", "m-2 d-grid gap-2", 4, "ngFor", "ngForOf"], [1, "col-8", "list-projects", 2, "height", "81vh"], [1, "container"], [1, "text-center", "mt-4"], ["width", "48px", "height", "48px", 3, "src"], [1, "text-center"], [1, "row", "mt-3"], ["class", "alert alert-dark text-center mt-2", "role", "alert", 4, "ngIf"], ["class", "p-3 mb-2 scroll", "style", "height: 65vh;overflow: auto;", 4, "ngIf"], ["class", "text-end", 4, "ngIf"], [1, "m-2", "d-grid", "gap-2"], ["type", "button", 1, "btn-language", "p-3", 3, "click"], ["width", "48px", 3, "src"], ["role", "alert", 1, "alert", "alert-dark", "text-center", "mt-2"], [1, "p-3", "mb-2", "scroll", 2, "height", "65vh", "overflow", "auto"], ["style", "border-radius: 15px", "class", "card border border-dark mt-2 mb-2", 4, "ngFor", "ngForOf"], [1, "card", "border", "border-dark", "mt-2", "mb-2", 2, "border-radius", "15px"], [1, "card-body"], [1, "col-md-3", 2, "display", "flex", "align-items", "center"], ["mat-button", "", 1, "btn", 3, "click"], ["width", "120px", "height", "60px", 2, "border", "1px solid", "color", "black"], [1, "col-md-8"], [1, "card-title"], [1, "card-text"], [1, "col-md-1", 2, "display", "flex", "align-items", "center", "justify-content", "flex-end"], ["target", "_blank", 1, "btn", 3, "href"], ["src", "./assets/img/github.png"], [1, "text-end"]], template: function InicioComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, InicioComponent_div_2_Template, 3, 1, "div", 2);
@@ -377,9 +532,8 @@ InicioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](15, InicioComponent_div_15_Template, 2, 0, "div", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "div", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, InicioComponent_div_17_Template, 14, 4, "div", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](16, InicioComponent_div_16_Template, 2, 1, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, InicioComponent_div_17_Template, 3, 2, "div", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -390,11 +544,13 @@ InicioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("src", ctx.iconoCaja, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](13, 5, ctx.nombreLenguaje));
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](13, 6, ctx.nombreLenguaje));
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.proyectos.length === 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.proyectos);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.proyectos.length !== 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.proyectos.length !== 0);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["UpperCasePipe"]], styles: [".btn-language[_ngcontent-%COMP%] {\r\n  \r\n\r\n  \r\n  \r\n  border: 0rem;\r\n  filter: none;\r\n  background: #ffffff;\r\n  border-radius: 15px;\r\n}\r\n\r\n.btn-language[_ngcontent-%COMP%]:hover {\r\n  \r\n  \r\n  filter: drop-shadow(0 0 0.2rem #fff);\r\n}\r\n\r\n.list-projects[_ngcontent-%COMP%] {\r\n  \r\n\r\n  background: #FFFFFF;\r\n  border-radius: 15px;\r\n}\r\n\r\n.scroll[_ngcontent-%COMP%]::-webkit-scrollbar {\r\n  display: none;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluaWNpby5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7aUJBQ2U7O0VBRWY7O0lBRUU7RUFDRixnQ0FBZ0M7RUFDaEMsWUFBWTtFQUNaLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsNEJBQTRCOztFQUU1QixvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRTtrQkFDZ0I7O0VBRWhCLG1CQUFtQjtFQUNuQixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7OztHQUdHOztBQUVIOzs7Ozs7R0FNRzs7QUFDSDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7R0FvQkciLCJmaWxlIjoiaW5pY2lvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWxhbmd1YWdlIHtcclxuICAvKiB3aWR0aDogNzZweDtcclxuICBoZWlnaHQ6IDc2cHg7ICovXHJcblxyXG4gIC8qIHdpZHRoOiAxMjBweDtcclxuICBoZWlnaHQ6IDEyMHB4O1xyXG4gICAqL1xyXG4gIC8qIG1peC1ibGVuZC1tb2RlOiBsdW1pbm9zaXR5OyAqL1xyXG4gIGJvcmRlcjogMHJlbTtcclxuICBmaWx0ZXI6IG5vbmU7XHJcbiAgYmFja2dyb3VuZDogI2ZmZmZmZjtcclxuICBib3JkZXItcmFkaXVzOiAxNXB4O1xyXG59XHJcblxyXG4uYnRuLWxhbmd1YWdlOmhvdmVyIHtcclxuICAvKiBtaXgtYmxlbmQtbW9kZTogbm9ybWFsOyAqL1xyXG4gIFxyXG4gIGZpbHRlcjogZHJvcC1zaGFkb3coMCAwIDAuMnJlbSAjZmZmKTtcclxufVxyXG5cclxuLmxpc3QtcHJvamVjdHMge1xyXG4gIC8qIHdpZHRoOiAzMDB2dztcclxuICBoZWlnaHQ6IDcwMHB4OyAqL1xyXG5cclxuICBiYWNrZ3JvdW5kOiAjRkZGRkZGO1xyXG4gIGJvcmRlci1yYWRpdXM6IDE1cHg7XHJcbn1cclxuXHJcbi5zY3JvbGw6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcclxuICBkaXNwbGF5OiBub25lO1xyXG59XHJcblxyXG4vKiAgXHJcbkBtZWRpYSAobWF4LXdpZHRoOiAxMjAwcHgpIHtcclxuIFxyXG59ICovXHJcblxyXG4vKlxyXG5AbWVkaWEgKG1heC13aWR0aDogNDMzcHgpIHtcclxuICAuYnRuLWxhbmd1YWdlIHtcclxuICAgIHdpZHRoOiA4NnB4O1xyXG4gICAgaGVpZ2h0OiA4NnB4O1xyXG4gIH1cclxufSAqL1xyXG4vKlxyXG5AbWVkaWEgKG1heC13aWR0aDogNTMzcHgpIHtcclxuICAuYnRuLWxhbmd1YWdlIHtcclxuICAgIHdpZHRoOiA4MnB4O1xyXG4gICAgaGVpZ2h0OiA4MnB4O1xyXG4gIH1cclxufVxyXG5cclxuQG1lZGlhIChtYXgtd2lkdGg6IDUxM3B4KSB7XHJcbiAgLmJ0bi1sYW5ndWFnZSB7XHJcbiAgICB3aWR0aDogODFweDtcclxuICAgIGhlaWdodDogODFweDtcclxuICB9XHJcbn1cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA0MTRweCkge1xyXG4gIC5idG4tbGFuZ3VhZ2Uge1xyXG4gICAgd2lkdGg6IDEwNXB4O1xyXG4gICAgaGVpZ2h0OiAxMDVweDtcclxuICB9XHJcbn0gKi9cclxuXHJcblxyXG4iXX0= */"] });
 
 
@@ -525,8 +681,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ModalProjectComponent_div_10_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Demo ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -546,8 +702,8 @@ class ModalProjectComponent {
     }
 }
 ModalProjectComponent.ɵfac = function ModalProjectComponent_Factory(t) { return new (t || ModalProjectComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_lenguajes_service__WEBPACK_IMPORTED_MODULE_1__["LenguajesService"])); };
-ModalProjectComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModalProjectComponent, selectors: [["app-modal-project"]], decls: 14, vars: 4, consts: [["mat-dialog-title", ""], [1, "mat-typography"], [1, "container"], [1, "row", "text-center"], ["width", "900", "height", "450", 3, "src"], [1, "row"], [1, "text-break"], ["class", "row", 4, "ngIf"], ["align", "end"], ["mat-button", "", "mat-dialog-close", "", 1, "btn", "btn-danger"], ["target", "_blank", 1, "btn", "btn-primary", 3, "href"]], template: function ModalProjectComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
+ModalProjectComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModalProjectComponent, selectors: [["app-modal-project"]], decls: 14, vars: 4, consts: [["mat-dialog-title", ""], [1, "mat-typography"], [1, "container"], [1, "text-center"], ["width", "900", "height", "400", 2, "border", "2px solid", "color", "black", 3, "src"], [1, "row", "mb-5"], [1, "text-break"], ["class", "row", 4, "ngIf"], ["align", "end"], ["mat-button", "", "mat-dialog-close", "", 1, "btn", "btn-secondary"], [1, "row"], ["target", "_blank", 1, "btn", "btn-primary", 3, "href"]], template: function ModalProjectComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-dialog-content", 1);
