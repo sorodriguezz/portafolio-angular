@@ -55,7 +55,7 @@ const lenguajes = [
     {
         id: 1,
         nombre: 'Angular',
-        imagen: '../../assets/img/angular.png',
+        imagen: './assets/img/angular.png',
         proyectos: [
             {
                 id: 1,
@@ -64,7 +64,7 @@ const lenguajes = [
                 url_repo: 'https://github.com/soRodriguezz/anime-jikan-angular',
                 descripcion: 'Realizado con Angular consumiendo API JIKAN',
                 modal: {
-                    imagen: '../../assets/project/proyecto_jikan.png',
+                    imagen: './assets/project/proyecto_jikan.png',
                     demo: 'https://sorodriguezz.github.io/anime-jikan-angular/',
                     descripcion: 'Proyecto realizado en Angular que consume la API de jikan.moe para obtener series de anime, obtener la información de un anime en específico y listar los capitulos en un modal.',
                 }
@@ -72,11 +72,11 @@ const lenguajes = [
             {
                 id: 2,
                 nombre: 'Proyecto API RickAndMorty',
-                imagen: './../assets/project/proyecto_rickandmorty.png',
+                imagen: './assets/project/proyecto_rickandmorty.png',
                 url_repo: 'https://github.com/soRodriguezz/api-rickandmorty-angular',
                 descripcion: 'API para login de usuarios en NodeJS',
                 modal: {
-                    imagen: '../../assets/project/proyecto_rickandmorty.png',
+                    imagen: './assets/project/proyecto_rickandmorty.png',
                     demo: 'https://sorodriguezz.github.io/api-rickandmorty-angular/#',
                     descripcion: ''
                 }
@@ -86,52 +86,52 @@ const lenguajes = [
     {
         id: 2,
         nombre: 'JS vanilla',
-        imagen: '../../assets/img/javascript.png',
+        imagen: './assets/img/javascript.png',
         proyectos: []
     },
     {
         id: 3,
         nombre: 'Ionic',
-        imagen: '../../assets/img/ionic.png',
+        imagen: './assets/img/ionic.png',
         proyectos: []
     },
     {
         id: 4,
         nombre: 'React',
-        imagen: '../../assets/img/react.png',
+        imagen: './assets/img/react.png',
         proyectos: []
     },
     {
         id: 5,
         nombre: 'Vue',
-        imagen: '../../assets/img/vue.png',
+        imagen: './assets/img/vue.png',
         proyectos: []
     },
     {
         id: 6,
         nombre: 'Python',
-        imagen: '../../assets/img/python.png',
+        imagen: './assets/img/python.png',
         proyectos: []
     },
     {
         id: 7,
         nombre: 'Node JS',
-        imagen: '../../assets/img/node-js.png',
+        imagen: './assets/img/node-js.png',
         proyectos: []
     },
     {
         id: 8,
         nombre: 'Redux',
-        imagen: '../../assets/img/redux.png',
+        imagen: './assets/img/redux.png',
         proyectos: [
             {
                 id: 1,
                 nombre: 'Proyecto con effects y redux',
-                imagen: '../../assets/project/effects-angular-redux.png',
+                imagen: './assets/project/effects-angular-redux.png',
                 url_repo: 'https://github.com/soRodriguezz/http-effects-angular-redux',
                 descripcion: '',
                 modal: {
-                    imagen: '../../assets/project/effects-angular-redux.png',
+                    imagen: './assets/project/effects-angular-redux.png',
                     demo: 'https://sorodriguezz.github.io/http-effects-angular-redux/',
                     descripcion: '',
                 }
@@ -141,7 +141,7 @@ const lenguajes = [
     {
         id: 9,
         nombre: 'Spring Boot',
-        imagen: '../../assets/img/spring.png',
+        imagen: './assets/img/spring.png',
         proyectos: []
     },
 ];
@@ -309,7 +309,7 @@ function InicioComponent_div_17_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const proyecto_r6 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("src", proyecto_r6.imagen.length > 0 ? proyecto_r6.imagen : "../../../assets/img/portafolio.jpg", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("src", proyecto_r6.imagen.length > 0 ? proyecto_r6.imagen : "./assets/img/portafolio.jpg", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](proyecto_r6.nombre);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
@@ -353,7 +353,7 @@ class InicioComponent {
     }
 }
 InicioComponent.ɵfac = function InicioComponent_Factory(t) { return new (t || InicioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_services_lenguajes_service__WEBPACK_IMPORTED_MODULE_3__["LenguajesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__["MatDialog"])); };
-InicioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: InicioComponent, selectors: [["app-inicio"]], decls: 18, vars: 7, consts: [[1, "row"], [1, "col-3", "scroll", 2, "height", "80vh", "overflow", "auto"], ["class", "m-2 d-grid gap-2", 4, "ngFor", "ngForOf"], [1, "col-8", "list-projects", 2, "height", "80vh"], [1, "container"], [1, "text-center", "mt-4"], ["width", "48px", "height", "48px", 3, "src"], [1, "text-center"], [1, "row", "mt-3"], ["class", "alert alert-dark text-center mt-2", "role", "alert", 4, "ngIf"], [1, "p-3", "mb-2", "scroll", 2, "height", "65vh", "overflow", "auto"], ["style", "border-radius: 15px", "class", "card border border-dark mt-2 mb-2", 4, "ngFor", "ngForOf"], [1, "m-2", "d-grid", "gap-2"], ["type", "button", 1, "btn-language", "p-3", 3, "click"], ["width", "48px", 3, "src"], ["role", "alert", 1, "alert", "alert-dark", "text-center", "mt-2"], [1, "card", "border", "border-dark", "mt-2", "mb-2", 2, "border-radius", "15px"], [1, "card-body"], [1, "col-md-3", 2, "display", "flex", "align-items", "center"], ["mat-button", "", 1, "btn", 3, "click"], ["width", "120px", "height", "60px"], [1, "col-md-7"], [1, "card-title"], [1, "card-text"], [1, "col-md-2", 2, "display", "flex", "align-items", "center", "justify-content", "flex-end"], ["target", "_blank", 1, "btn", 3, "href"], ["src", "../../../assets/img/github.png"]], template: function InicioComponent_Template(rf, ctx) { if (rf & 1) {
+InicioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: InicioComponent, selectors: [["app-inicio"]], decls: 18, vars: 7, consts: [[1, "row"], [1, "col-3", "scroll", 2, "height", "80vh", "overflow", "auto"], ["class", "m-2 d-grid gap-2", 4, "ngFor", "ngForOf"], [1, "col-8", "list-projects", 2, "height", "80vh"], [1, "container"], [1, "text-center", "mt-4"], ["width", "48px", "height", "48px", 3, "src"], [1, "text-center"], [1, "row", "mt-3"], ["class", "alert alert-dark text-center mt-2", "role", "alert", 4, "ngIf"], [1, "p-3", "mb-2", "scroll", 2, "height", "65vh", "overflow", "auto"], ["style", "border-radius: 15px", "class", "card border border-dark mt-2 mb-2", 4, "ngFor", "ngForOf"], [1, "m-2", "d-grid", "gap-2"], ["type", "button", 1, "btn-language", "p-3", 3, "click"], ["width", "48px", 3, "src"], ["role", "alert", 1, "alert", "alert-dark", "text-center", "mt-2"], [1, "card", "border", "border-dark", "mt-2", "mb-2", 2, "border-radius", "15px"], [1, "card-body"], [1, "col-md-3", 2, "display", "flex", "align-items", "center"], ["mat-button", "", 1, "btn", 3, "click"], ["width", "120px", "height", "60px"], [1, "col-md-7"], [1, "card-title"], [1, "card-text"], [1, "col-md-2", 2, "display", "flex", "align-items", "center", "justify-content", "flex-end"], ["target", "_blank", 1, "btn", 3, "href"], ["src", "./assets/img/github.png"]], template: function InicioComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, InicioComponent_div_2_Template, 3, 1, "div", 2);

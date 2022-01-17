@@ -33,7 +33,7 @@
                                     <div class="col-md-3" style="display: flex;align-items: center;">
                                         <a class="btn" mat-button (click)="abrirModal(proyecto)">
                                             <img  
-                                                [attr.src]="proyecto.imagen.length > 0 ? proyecto.imagen : '../../../assets/img/portafolio.jpg'"
+                                                [attr.src]="proyecto.imagen.length > 0 ? proyecto.imagen : './assets/img/portafolio.jpg'"
                                                 width="120px"
                                                 height="60px">
                                         </a>
@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="col-md-2" style="display: flex;align-items: center;justify-content: flex-end">
                                         <a target="_blank" href="{{ proyecto.url_repo }}"  class="btn">
-                                            <img src="../../../assets/img/github.png">
+                                            <img src="./assets/img/github.png">
                                         </a>
                                     </div>
                                 </div>
