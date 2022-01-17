@@ -7,7 +7,7 @@ export const lenguajes = [
       {
         id: 1,
         nombre: 'Proyecto API JIKAN',
-        imagen: '../../assets/project/proyecto_jikan.png',
+        imagen: './assets/project/proyecto_jikan.png',
         url_repo: 'https://github.com/soRodriguezz/anime-jikan-angular',
         descripcion: 'Realizado con Angular consumiendo API JIKAN',
         modal: {
